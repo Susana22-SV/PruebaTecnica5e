@@ -1,0 +1,71 @@
+.App {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: solid 2px black;
+}
+
+.App-logo{
+  border-right: solid 2px black;
+  width: 14%;
+  padding: 10px;
+}
+
+.App-user{
+  padding: 10px 20px 10px 20px;
+}
+
+.Icon-user{
+  padding: 0px 0px 0px 20px;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 65px; 
+}
+
+.App-cover {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.App-footer{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; 
+
+  text-align: center;
+}
+
+.App-text-footer {
+  margin-right: 30px;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}
+
+.App-footer > div {
+  animation: carousel 10s infinite linear;
+}
+
